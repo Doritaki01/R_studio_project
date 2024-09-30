@@ -20,13 +20,13 @@ tail(data$Abstract,2) #περιληψη 2 τελευταιων
 
 library(readr)
 
-icd10 <- read_delim("C:/Users/geo20/Downloads/icd10.csv",";", escape_double = FALSE, trim_ws = TRUE) #διαβασμα csv
+icd10 <- read_delim("C:/Users/Downloads/icd10.csv",";", escape_double = FALSE, trim_ws = TRUE) #διαβασμα csv
 View(icd10)
 
-first_disease=icd10[(icd10$code =='G710'),]    #George Charalambous el19706 δεν υπάρχει επιλέγω G710
+first_disease=icd10[(icd10$code =='G710'),]    #Dorothea Koumidou el19712 δεν υπάρχει επιλέγω G710
 print(first_disease$name)
 
-second_disease=icd10[(icd10$code =='C060'),]  #George Charalambous el19706  δεν υπάρχει eπιλέγω C060
+second_disease=icd10[(icd10$code =='C060'),]  #Dorothea Koumidou el19712  δεν υπάρχει eπιλέγω C060
 
 third_disease=icd10[(icd10$code =='D720'),]    ##τυχαια
 print(third_disease$name)
